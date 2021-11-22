@@ -33,6 +33,7 @@ development = os.environ.get("DEVELOPMENT")
 
 if development == "True":
     DEBUG = True
+    ALLOWED_HOSTS = [os.environ.get("LOCAL_HOST")]
 else:
     DEBUG = False
     ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME")]
