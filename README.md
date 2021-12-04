@@ -1,24 +1,22 @@
-
-# Project Name
+# Owl Nook
 
 ## Overview
 
 ### What is this website for?
 
-one paragraph about what your website does
+The blog if for the user to find all kinds of information in one convenient place as well as share tips and funny things to the general internet.
 
 ### What does it do?
 
-one paragraph, or two describing what your website does
+Reddit type blog full of all kinds of posts. This includes news, tips and posts just for laughs from memes to your next book to your next cocktail party type drinks. Users can post their posts or just browse what other people have posted.
 
 ### How does it work
 
-one paragraph describing how the4 website works
-This website uses AngularJS to route viewers through the site and control which Javascript is executed. The site is styled with Bootstrap. The quiz has been created using Javascript and modal for enlarging images is displayed using some JQuery code. Bower has been used to manage package dependencies for deployment of site on github pages. The site can be viewed HERE
+The website is going to be blog type layout. For those users who are there just to browse can expand on the post they are interested in but they will need to have an account to view the content. They can also save posts to read later. For those who love to share content they also need to have an account and can create posts and add photos at their own convenience. The website is built using the Django framework to handle creating user accounts and managing the website. The Postgres database is used to store general user data so that they can access their information later.
 
-[Live Website](https://datonex.github.io/visit-zimbabwe/)
+[Live Website](https://owl-nook.herokuapp.com/)
 
-[GitHub Repository](https://github.com/datonex/visit-zimbabwe/)
+[GitHub Repository](https://github.com/datonex/owl-nook)
 
 ## UX
 
@@ -264,6 +262,7 @@ From line 345, column 63; to line 345, column 118
 `="button"><a href="https://www.evisa.gov.zw/home" target="_blank">Apply`
 
 <!-- markdownlint-disable-next-line MD029 -->
+
 2. Error: The element a must not appear as a descendant of the button element.
 
 From line 376, column 38; to line 376, column 89
