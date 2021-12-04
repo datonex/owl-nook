@@ -30,21 +30,29 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 ### User Stories
 
-- #### Things are slowly getting back to normal due to the pandemic, I want to plan my next holiday
+#### As a user I want to be able to
 
-1. I want to easily navigate the site relatively easily
+- Register for an account so that I can comment, and like and view full content
 
-2. I want to be able to see a balance of text, images and some video to get a glimpse of where I will be visiting
+- Leave comments on a post so that I can be involved in the conversation
 
-3. I want to be able to access links that direct me to important websites easily
+- Upvote/Downvote posts so that I can interact with content
 
-4. I want some clicking interaction with the page so that I don't get bored
+- Save posts so that I can access content easily at my own convenience
 
-- #### As a previous who is using the website for reference
+- Open posts so that I can read full text
 
-1. I want to have access to the website on any device and on the go
+- View the date/time of an individual post so that I can see which content is the most up to date.
 
-2. I want the navigation bar easily accessible so that I can get where I want quickly
+- Add category to posts so that it is easier to find later.
+
+- Filter posts so that it is easier to search
+
+#### As Admin I was to be able to
+
+- Approve Comments so that I can filter out objectionable comments
+
+#### As User/Admin
 
 ### Design
 
