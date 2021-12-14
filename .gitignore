@@ -9,3 +9,6 @@ node_modules/
 cloudinary_python.txt
 .vscode/
 db.sqlite3
+*.zip
+.DS_Store
+planning
