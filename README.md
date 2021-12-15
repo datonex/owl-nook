@@ -64,13 +64,11 @@ The colour scheme was generated randomly using the [coolors](https://coolors.co/
 
 #### Typography
 
-- Font used for headings was Lobster with a back-up font of sans-serif. The font is eye catching and decorated white still easy to read.
+The font used for headings and content text is Poppins, with a backup font of sans serif. The nature of the website means that there are sections where there will be a lot of text. Poppins is a font that looks good in large and small text and, the user can also easily distinguish letters. Depending on what the user posts, wether it be italic text for quotes, or title, The entire Poppins family of fonts and font weights will be available to the user.
 
-<img src="./assets/images/readme-images/lobster-font.png" height="50px" />
+[<img src="README/mockups/components/img/typography.png" />](README/mockups/components/pdf/typography.pdf)
 
-- Font used for main text was Open Sans with a back-up font of sans-serif. The font is easy to read and well spaced out.
-
-<img src="./assets/images/readme-images/open-sans-font.png" height="50px"/>
+Click here for [pdf version](README/mockups/components/pdf/typography.pdf) 👈
 
 #### Imagery
 
