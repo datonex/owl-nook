@@ -14,9 +14,9 @@ Reddit type blog full of all kinds of posts. This includes news, tips and posts 
 
 The website is going to be blog type layout. For those users who are there just to browse can expand on the post they are interested in but they will need to have an account to view the content. They can also save posts to read later. For those who love to share content they also need to have an account and can create posts and add photos at their own convenience. The website is built using the Django framework to handle creating user accounts and managing the website. The Postgres database is used to store general user data so that they can access their information later.
 
-[Live Website](https://owl-nook.herokuapp.com/)
+:point_right: [Live Website](https://owl-nook.herokuapp.com/)
 
-[GitHub Repository](https://github.com/datonex/owl-nook)
+:point_right: [GitHub Repository](https://github.com/datonex/owl-nook)
 
 ## UX
 
@@ -58,11 +58,9 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 #### Colour Scheme
 
-Initially the colour scheme of the website was supposed to represent the national colours of the zimbabwean flag. However the colours were too bright and did not blend well together.
+The colour scheme was generated randomly using the [coolors](https://coolors.co/ffffff-b0b7bf-0e103d-f87575) generator. I wanted it to be a dark mode theme. Initially the generator started with 5 colours but they were too many. I reduced it to three (navy, coral and grey). When I began creating the mockups, the grey did not have enough contrast with the background, particularly with small text. As a result I added white to the colour palette.
 
-Instead, I used the idea that Zimbabwe has a lot of wild life, the colour was meant to mimic the savannah during a sunset. The colour is subtle without grabbing to much attention while giving more focus to the images. The main colour was picked using the colour picker on the header website to obtain the colour light salmon (#fdcba6) The buttons were matched using the compound approach from [adobe color wheel](https://color.adobe.com/create/color-wheel). to obtain the colour (#71C9A2)
-
-<img src="./assets/images/readme-images/colour-scheme.png" height="100px"/>
+<img src="./README/mockups/components/colour-palette.png"/>
 
 #### Typography
 
