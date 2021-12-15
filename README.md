@@ -8,7 +8,7 @@ The blog if for the user to find all kinds of information in one convenient plac
 
 ### What does it do?
 
-Reddit type blog full of all kinds of posts. This includes news, tips and posts just for laughs from memes to your next book to your next cocktail party type drinks. Users can post their posts or just browse what other people have posted.
+Reddit type blog full of all kinds of posts. This includes news, tips and posts just for laughs from memes to your next book to your next cocktail party type drinks. Users can posts or just browse what other people have posted. Unregistered users have very little access to content nad must join to view the entire post.
 
 ### How does it work
 
