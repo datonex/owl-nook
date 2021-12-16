@@ -1,4 +1,4 @@
-# Owl Nook
+# <img src="static/img/logo/owl-only/owl-coral.png" height="50" /> Owl Nook
 
 ## Overview
 
@@ -14,7 +14,7 @@ Reddit type blog full of all kinds of posts. This includes news, tips and posts 
 
 The website is going to be blog type layout. For those users who are there just to browse can expand on the post they are interested in but they will need to have an account to view the content. They can also save posts to read later. For those who love to share content they also need to have an account and can create posts and add photos at their own convenience. The website is built using the Django framework to handle creating user accounts and managing the website. The Postgres database is used to store general user data so that they can access their information later.
 
-:point_right: [Live Website](https://owl-nook.herokuapp.com/)
+:point_right: [Live Website](https://owl-nook.herokuapp.com/) :desktop_computer:
 
 :point_right: [GitHub Repository](https://github.com/datonex/owl-nook)
 
@@ -56,11 +56,55 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 ### Design
 
+#### Mockups
+
+Mockups were created using [Balsamiq Wireframes](https://balsamiq.com/). The website design was inspired by the the [Medium](https://medium.com/), [Reddit](https://www.reddit.com/) and [Philosophy](https://preview.colorlib.com/#philosophy) template
+
+The website design was based on a mobile first design and based on the features from the user stories. The website logo is to be fixed at the top right of the page and the bottom left of the footer. All register/login buttons will be in the header, fixed at the top right corner of the device.
+
+##### Mobile Mockups
+
+Click here for mobile [pdf versions](README/wireframes/mobile.pdf) 👈
+
+- _Homepage_
+
+  The homepage is meant to be simple and allows the user to view incoming posts straight away wether they are a new user or a returning user. New posts are displayed large and clearly on at the top of the page. The featured image of the blog will be large and the title with other details displayed over it. Older posts are show underneath in smaller cards with the featured image on the left content and titles on the right. The page will infinitely scroll until the first post.
+
+  <img src="README/wireframes/img/mobile/homepage.png" height="300" />
+
+- _Blog post_
+
+  The blog post page will have a centered title and the user will be able to see the author of the post easily. There will be a featured image represented by the blank image and the content below it. Registered users will be able to rate and post on comments
+
+  <img src="README/wireframes/img/mobile/blog-post.png" height="300" />
+
+- _Category_
+
+  Each blog post will have a category or topic that is assigned by the author of the post (category is displayed by the button under the content on blog post) When the user clicks on the button they are redirected to the category page where they will be able to view all posts in that category. Again the page will infinitely scroll.
+
+  <img src="README/wireframes/img/mobile/category.png" height="300" />
+
+- _About us_
+
+  Pages that include information about Owl Nook, the legal pages and privacy pages will be based on this template.
+
+  <img src="README/wireframes/img/mobile/about-us.png" height="300" />
+
+- Forms: _Contact Us, Sign up, Login_
+
+  All the forms wil be based on these templates using the appropriate for each. Ideally they will fill the entire screen and there should be no need to scroll vertically or horizontally.
+
+  <img src="README/wireframes/img/mobile/sign-up_sign-in.png" height="300" /> <img src="README/wireframes/img/mobile/contact-us.png" height="300" />
+
+##### Tablet Mockups
+
+##### Desktop Mockups
+
 #### Colour Scheme
 
 The colour scheme was generated randomly using the [coolors](https://coolors.co/ffffff-b0b7bf-0e103d-f87575) generator. I wanted it to be a dark mode theme. Initially the generator started with 5 colours but they were too many. I reduced it to three (navy, coral and grey). When I began creating the mockups, the grey did not have enough contrast with the background, particularly with small text. As a result I added white to the colour palette.
 
-<img src="./README/mockups/components/colour-palette.png"/>
+<img src="README/mockups/components/colour-palette.png"/>
 
 #### Typography
 
@@ -72,13 +116,7 @@ Click here for [pdf version](README/mockups/components/pdf/typography.pdf) 👈
 
 #### Imagery
 
-Blog images will be posted by a user. The user must post an image when posting a blog, otherwise a default image will be used. The default image is a woman sitting at a desk typing on a laptop on a ceramic desk.
-
-#### Mockups
-
-Mockups were made using Balsamiq Wireframes
-
-[Mockup](./assets/planning/mockup-1.pdf)
+Blog images will be posted by a user. The user must post an image when posting a blog, otherwise a default image will be used. The default image is a woman sitting typing on a laptop on a ceramic desk.
 
 #### Wireframes
 
