@@ -130,16 +130,35 @@ Click here for [pdf version](README/mockups/components/pdf/typography.pdf) 👈
 
 Blog images will be posted by a user. The user must post an image when posting a blog, otherwise a default image will be used. The default image is a woman sitting typing on a laptop on a ceramic desk.
 
-#### Wireframes
+### Database
 
-- Wireframes were created using Adobe Xd, however, the layout and design was fallowed very loosely and changed during the mockup stage.
-- [Mobile Wireframes](https://xd.adobe.com/view/9071beee-abcf-426e-6c19-ffe3212c5172-e640/) :point_left:
+#### Conceptual ERD
 
-              <img src="./assets/images/readme-images/mobile-wire.png" />
+The database for this project began a conceptual ERD to show the relationship between each entity. Each user entity that is created either be an admin or regular member. If the user is an administrator, they have permission to add, edit or delete the category names. The normal user will only have permission to read the category and assign it to a blog post.
 
-  - [Desktop Wireframes](https://xd.adobe.com/view/d44aebce-000d-4a7c-4e4b-7ea4372b445b-a27b/) :point_left:
+Each user can create a blog post entity, a comment and a reading list to save a blog post to read at their convenience.
 
-                    <img src="./assets/images/readme-images/desktop-wire.png" />
+[![conceptual ERD](README/DBMS/img/revised-conceptual-ERD.png)](README/DBMS/pdf/revised-conceptual-ERD.pdf)
+
+Click here for [pdf version](README/DBMS/pdf/revised-conceptual-ERD.pdf) 👈
+
+#### Physical ERD model
+
+The physical ERD model will illustrate how the entities and their information will be added to the database. I will be using crow foot notation to demonstrate the relationships.
+
+- Each user entity has a **User_ID** attribute as the primary key. It will be used as the foreign key in blog post and whose attribute is **Author**.
+
+- **User_ID** attribute will also be used be used as the foreign key **Member** attribute in the Comment entity.
+
+- Each category has a **Category_ID** attribute as the primary key. It will be used as the foreign key in blog post and whose attribute is **Category**.
+
+- Each blog post has a **Blog_Post_ID** attribute as the primary key. It will be used as the foreign key in blog post and whose attribute is **Category**.
+
+- **Blog_Post_ID** attribute will also be used be used as the foreign key **Blog_post** attribute in the reading list entity.
+
+[![physical ERD](README/DBMS/img/revised-ERD-crows-foot.png)](README/DBMS/pdf/revised-ERD-crows-foot.pdf)
+
+Click here for [pdf version](README/DBMS/pdf/revised-ERD-crows-foot.pdf) 👈
 
 ### Existing Features
 
