@@ -56,13 +56,13 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 ### Design
 
-#### Mockups
+#### Wireframes
 
-Mockups were created using [Balsamiq Wireframes](https://balsamiq.com/). The website design was inspired by the the [Medium](https://medium.com/), [Reddit](https://www.reddit.com/) and [Philosophy](https://preview.colorlib.com/#philosophy) template
+Wireframes were created using [Balsamiq Wireframes](https://balsamiq.com/). The website design was inspired by the the [Medium](https://medium.com/), [Reddit](https://www.reddit.com/) and [Philosophy](https://preview.colorlib.com/#philosophy) template
 
 The website design was based on a mobile first design and based on the features from the user stories. The website logo is to be fixed at the top right of the page and the bottom left of the footer. All register/login buttons will be in the header, fixed at the top right corner of the device.
 
-##### Mobile Mockups
+##### :iphone: Mobile Wireframes
 
 Click here for mobile [pdf versions](README/wireframes/mobile.pdf) 👈
 
@@ -96,9 +96,21 @@ Click here for mobile [pdf versions](README/wireframes/mobile.pdf) 👈
 
   <img src="README/wireframes/img/mobile/sign-up_sign-in.png" height="300" /> <img src="README/wireframes/img/mobile/contact-us.png" height="300" />
 
-##### Tablet Mockups
+##### :iphone: Tablet Wireframes
 
-##### Desktop Mockups
+Click here for tablet [pdf versions](README/wireframes/tablet.pdf) 👈
+
+The tablet wireframes are very similar to the mobile wireframes with minor modifications the content and elements to fit the screen size.
+
+<img src="README/wireframes/img/tablet/homepage.png" height="350" /> <img src="README/wireframes/img/tablet/blog-post.png" height="350" /> <img src="README/wireframes/img/tablet/category.png" height="350" /> <img src="README/wireframes/img/tablet/about-us.png" height="350" /> <img src="README/wireframes/img/tablet/sign-up_sign-in.png" height="350" /> <img src="README/wireframes/img/tablet/contact-us.png" height="350" />
+
+##### :desktop_computer: Desktop Wireframes
+
+Click here for Desktop [pdf versions](README/wireframes/desktop.pdf) 👈
+
+The desktop wireframes are very similar to the tablet wireframes with minor modifications the content and elements to fit the screen size. The footer will be constantly displayed as the user scrolls including the categories on the right side of the page.
+
+<img src="README/wireframes/img/desktop/homepage.png" height="300" /> <img src="README/wireframes/img/desktop/blog-post.png" height="300" /> <img src="README/wireframes/img/desktop/category.png" height="300" /> <img src="README/wireframes/img/desktop/about-us.png" height="300" /> <img src="README/wireframes/img/desktop/sign-up_sign-in.png" height="300" /> <img src="README/wireframes/img/desktop/contact-us.png" height="300" />
 
 #### Colour Scheme
 
