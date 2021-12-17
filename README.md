@@ -116,19 +116,61 @@ The desktop wireframes are very similar to the tablet wireframes with minor modi
 
 The colour scheme was generated randomly using the [coolors](https://coolors.co/ffffff-b0b7bf-0e103d-f87575) generator. I wanted it to be a dark mode theme. Initially the generator started with 5 colours but they were too many. I reduced it to three (navy, coral and grey). When I began creating the mockups, the grey did not have enough contrast with the background, particularly with small text. As a result I added white to the colour palette.
 
-<img src="README/mockups/components/colour-palette.png"/>
+![colour palette](README/mockups/components/colour-palette.png)
+
+When I began creating the mockups the colour scheme was more or less the same. some elements like the accent colours were quite distracting. For example the horizontal rule under the blog title. I decreased the transparency so that to help breakup text and sections but without distracting the user from reading the content. the image below will show the same colours used originally by with varying degrees of transparency reducing by 20% each time.
+
+[![colour palette](README/mockups/components/img/colors.png)](README/mockups/components/pdf/colors.pdf)
+
+Click here for [pdf version](README/mockups/components/pdf/colors.pdf) 👈
 
 #### Typography
 
 The font used for headings and content text is Poppins, with a backup font of sans serif. The nature of the website means that there are sections where there will be a lot of text. Poppins is a font that looks good in large and small text and, the user can also easily distinguish letters. Depending on what the user posts, wether it be italic text for quotes, or title, The entire Poppins family of fonts and font weights will be available to the user.
 
-[<img src="README/mockups/components/img/typography.png" />](README/mockups/components/pdf/typography.pdf)
+[![typography](README/mockups/components/img/typography.png)](README/mockups/components/pdf/typography.pdf)
 
 Click here for [pdf version](README/mockups/components/pdf/typography.pdf) 👈
 
 #### Imagery
 
 Blog images will be posted by a user. The user must post an image when posting a blog, otherwise a default image will be used. The default image is a woman sitting typing on a laptop on a ceramic desk.
+
+#### Buttons and button groups
+
+Buttons and any other button groups will be based on this template below. to ensure consistent formatting when the scope of the project increases.
+
+[![buttons](README/mockups/components/img/buttons.png)](README/mockups/components/pdf/buttons.pdf)
+
+Click here for [pdf version](README/mockups/components/pdf/buttons.pdf) 👈
+
+#### Content Blocks
+
+Content blocks will be derived from the following template even when the scope of the project increases.
+
+[<img src="README/mockups/components/img/content-blocks.png" height="500">](README/mockups/components/pdf/content-blocks.pdf)
+
+Click here for [pdf version](README/mockups/components/pdf/content-blocks.pdf) 👈
+
+#### Form elements
+
+Form elements for the blog will be based in template below, This includes text input, textarea and checkboxes
+
+[![buttons](README/mockups/components/img/form-elements.png)](README/mockups/components/pdf/form-elements.pdf)
+
+Click here for [pdf version](README/mockups/components/pdf/form-elements.pdf) 👈
+
+#### Other elements and reference components
+
+The following items were used for reference to aid creation of components for Owl Nook website.
+
+- [Helper Blocks](README/mockups/components/pdf/helpers.pdf) 👈
+
+- [Navigation](README/mockups/components/pdf/navigation-components-dark.pdf) 👈
+
+- [Shadows and other shenanigans](README/mockups/components/pdf/shadow-and-other-shenanigans.pdf) 👈
+
+### Mockups
 
 ### Database
 
