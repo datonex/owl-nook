@@ -57,7 +57,7 @@ The website design was based on a mobile first design and based on the features 
 
 ##### :iphone: Mobile Wireframes
 
-Click here for mobile [pdf versions](README/wireframes/mobile.pdf) 👈
+Click here for mobile [pdf versions](README/wireframes/mobile.pdf) :point_left:
 
 - _Homepage_
 
@@ -91,7 +91,7 @@ Click here for mobile [pdf versions](README/wireframes/mobile.pdf) 👈
 
 ##### :iphone: Tablet Wireframes
 
-Click here for tablet [pdf versions](README/wireframes/tablet.pdf) 👈
+Click here for tablet [pdf versions](README/wireframes/tablet.pdf) :point_left:
 
 The tablet wireframes are very similar to the mobile wireframes with minor modifications the content and elements to fit the screen size.
 
@@ -99,7 +99,7 @@ The tablet wireframes are very similar to the mobile wireframes with minor modif
 
 ##### :desktop_computer: Desktop Wireframes
 
-Click here for Desktop [pdf versions](README/wireframes/desktop.pdf) 👈
+Click here for Desktop [pdf versions](README/wireframes/desktop.pdf) :point_left:
 
 The desktop wireframes are very similar to the tablet wireframes with minor modifications the content and elements to fit the screen size. The footer will be constantly displayed as the user scrolls including the categories on the right side of the page.
 
@@ -111,11 +111,11 @@ The colour scheme was generated randomly using the [coolors](https://coolors.co/
 
 ![colour palette](README/mockups/components/colour-palette.png)
 
-When I began creating the mockups the colour scheme was more or less the same. some elements like the accent colours were quite distracting. For example the horizontal rule under the blog title. I decreased the transparency so that to help breakup text and sections but without distracting the user from reading the content. the image below will show the same colours used originally by with varying degrees of transparency reducing by 20% each time.
+The components and mockups were made using [Figma](https://www.figma.com/). The components were generated from [Creatt Studios](https://www.figma.com/@creatt) wireframe kit. When I began creating the mockups the colour scheme was more or less the same. some elements like the accent colours were quite distracting. For example the horizontal rule under the blog title. I decreased the transparency so that to help breakup text and sections but without distracting the user from reading the content. the image below will show the same colours used originally by with varying degrees of transparency reducing by 20% each time.
 
 [![colour palette](README/mockups/components/img/colors.png)](README/mockups/components/pdf/colors.pdf)
 
-Click here for [pdf version](README/mockups/components/pdf/colors.pdf) 👈
+Click here for [pdf version](README/mockups/components/pdf/colors.pdf) :point_left:
 
 #### Typography
 
@@ -123,7 +123,7 @@ The font used for headings and content text is Poppins, with a backup font of sa
 
 [![typography](README/mockups/components/img/typography.png)](README/mockups/components/pdf/typography.pdf)
 
-Click here for [pdf version](README/mockups/components/pdf/typography.pdf) 👈
+Click here for [pdf version](README/mockups/components/pdf/typography.pdf) :point_left:
 
 #### Imagery
 
@@ -135,7 +135,7 @@ Buttons and any other button groups will be based on this template below. to ens
 
 [![buttons](README/mockups/components/img/buttons.png)](README/mockups/components/pdf/buttons.pdf)
 
-Click here for [pdf version](README/mockups/components/pdf/buttons.pdf) 👈
+Click here for [pdf version](README/mockups/components/pdf/buttons.pdf) :point_left:
 
 #### Content Blocks
 
@@ -143,7 +143,7 @@ Content blocks will be derived from the following template even when the scope o
 
 [<img src="README/mockups/components/img/content-blocks.png" height="500">](README/mockups/components/pdf/content-blocks.pdf)
 
-Click here for [pdf version](README/mockups/components/pdf/content-blocks.pdf) 👈
+Click here for [pdf version](README/mockups/components/pdf/content-blocks.pdf) :point_left:
 
 #### Form elements
 
@@ -151,19 +151,37 @@ Form elements for the blog will be based in template below, This includes text i
 
 [![buttons](README/mockups/components/img/form-elements.png)](README/mockups/components/pdf/form-elements.pdf)
 
-Click here for [pdf version](README/mockups/components/pdf/form-elements.pdf) 👈
+Click here for [pdf version](README/mockups/components/pdf/form-elements.pdf) :point_left:
 
 #### Other elements and reference components
 
 The following items were used for reference to aid creation of components for Owl Nook website.
 
-- [Helper Blocks](README/mockups/components/pdf/helpers.pdf) 👈
+- [Helper Blocks](README/mockups/components/pdf/helpers.pdf) :point_left:
 
-- [Navigation](README/mockups/components/pdf/navigation-components-dark.pdf) 👈
+- [Navigation](README/mockups/components/pdf/navigation-components-dark.pdf) :point_left:
 
-- [Shadows and other shenanigans](README/mockups/components/pdf/shadow-and-other-shenanigans.pdf) 👈
+- [Shadows and other shenanigans](README/mockups/components/pdf/shadow-and-other-shenanigans.pdf) :point_left:
 
 #### Mockups
+
+Links will open on the Figma website and no login is required.
+
+[Mobile wireframes](https://www.figma.com/file/XqiOnOlv4pmVabeIaTCnUr/?node-id=2%3A3) :point_left:
+
+[Tablet wireframes](https://www.figma.com/file/XqiOnOlv4pmVabeIaTCnUr/?node-id=2%3A2) :point_left:
+
+[Desktop wireframes](https://www.figma.com/file/XqiOnOlv4pmVabeIaTCnUr/?node-id=0%3A1) :point_left:
+
+#### Interactive prototype
+
+The prototypes for tablet and mobile are not shown as they are identical to the desktop prototype. To interact with the prototype, click the play button on the top right corner of the screen as shown below :point_down:
+
+![play prototype button](README/prototype-interaction.png)
+
+This will allow you to view the flow of the website and some of the interactions with the buttons.
+
+[Desktop prototype](https://www.figma.com/file/DpvgBd6vfV7ZxK9vpB97pc/?node-id=0%3A1) :point_left:
 
 ### Database
 
