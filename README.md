@@ -18,7 +18,7 @@ The website is going to be blog type layout. For those users who are there just 
 
 :point_right: [GitHub Repository](https://github.com/datonex/owl-nook)
 
-## UX
+## UX & UI design
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
@@ -30,29 +30,22 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 ### User Stories
 
-#### As a user I want to be able to
-
-- Register for an account so that I can comment, and like and view full content
-
-- Leave comments on a post so that I can be involved in the conversation
-
-- Upvote/Downvote posts so that I can interact with content
-
-- Save posts so that I can access content easily at my own convenience
-
-- Open posts so that I can read full text
-
-- View the date/time of an individual post so that I can see which content is the most up to date.
-
-- Add category to posts so that it is easier to find later.
-
-- Filter posts so that it is easier to search
-
-#### As Admin I was to be able to
-
-- Approve Comments so that I can filter out objectionable comments
-
-#### As User/Admin
+| **Role**     | **Summary**                              | **Feature**                                   |
+| ------------ | ---------------------------------------- | --------------------------------------------- |
+| ADMIN        | approve comments                         | filter out objectionable comments             |
+| USER         | register an account                      | comment, like and view full content           |
+| USER         | leave comments on a post                 | be involved in the conversion                 |
+| USER         | upvote and downvote posts                | interact with content                         |
+| USER         | save posts                               | access content easily at my own convenience   |
+| USER         | open posts                               | read full text                                |
+| USER         | view the date/time of an individual post | see which content is most up to date/ or not. |
+| USER         | add categories to post                   | can get to the topics I want                  |
+| USER         | filter post                              | control what content i see first              |
+| USER         | follow a user                            | easily see their posts                        |
+| USER / ADMIN | view the number of likes on each post    | see which is the most popular or viral        |
+| USER / ADMIN | create posts                             | post blog content                             |
+| USER / ADMIN | view comments on an individual posts     | read the conversation                         |
+| USER / ADMIN | create draft posts                       | finish writing the content later              |
 
 ### Design
 
@@ -170,7 +163,7 @@ The following items were used for reference to aid creation of components for Ow
 
 - [Shadows and other shenanigans](README/mockups/components/pdf/shadow-and-other-shenanigans.pdf) 👈
 
-### Mockups
+#### Mockups
 
 ### Database
 
