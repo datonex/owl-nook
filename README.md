@@ -297,6 +297,8 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 - [Trello](https://trello.com/) - Agile tool of choice to manage and plan web app.
 
+- [MindNode](https://www.mindnode.com/) - app used to draw mind maps to show entities and their attributes.
+
 - [Lucid Chart](https://www.lucidchart.com/) - web app use to illustrated database schema.
 
 - [Canva](https://www.canva.com/) - webapp used to design logo and favicon.
