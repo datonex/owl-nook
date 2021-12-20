@@ -47,6 +47,8 @@ This section is also where you would share links to any wireframes, mockups, dia
 | USER / ADMIN | view comments on an individual posts     | read the conversation                         |
 | USER / ADMIN | create draft posts                       | finish writing the content later              |
 
+The Agile tool of choice to plan and manage my work is [Trello](https://trello.com/). The workflow is illustrated [here](https://trello.com/b/EE8FIF7B) :point_left:
+
 ### Design
 
 #### Wireframes
@@ -265,49 +267,55 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 ### Languages used
 
-- [**HTML**](https://en.wikipedia.org/wiki/HTML5)
-- description of how it was used
-- [**CSS**](https://en.wikipedia.org/wiki/CSS)
-- [JavaScript](https://www.javascript.com/)
+- [HTML](https://en.wikipedia.org/wiki/HTML5) - Add content and formatting to web page.
+- [CSS](https://en.wikipedia.org/wiki/CSS) - Add styling and colours to web page.
+- [JavaScript](https://www.javascript.com/) - Add interactive features to web page
+
+- [Python](https://www.python.org/) - Add code to allow app to access database.
 
 ### Frameworks, Libraries and Programs Used
 
-- [Fontawesome _v.5.15.3_](https://fontawesome.com/)
-- We use **Font Awesome** javascript link to insert icons in the website to make site more visually appealing and easy to navigate.
+- [Visual Studio Code](https://code.visualstudio.com/) - Source-code editor optimised for debugging, testing, syntax highlighting and extension support
 
-- [Favicon](https://favicon.io/)
-- Favicon.io was used to generate favicon and copied the syntax
+- [Git](https://git-scm.com/) - used to allow for tracking of any changes in the code and for the version control.
 
-- [Google Fonts](https://fonts.google.com/)
-- Google Fonts was used to import 'Lobster' and 'Open Sans' fonts in the style.css stylesheet.
+- [Github](https://github.com/) - used to host the project files
 
-- [Visual Studio Code](https://code.visualstudio.com/)
-- Source-code editor optimised fro debugging, syntax highlighting and extension support
+- [Heroku](https://www.heroku.com/) - used to deploy web application
 
-- [Git](https://git-scm.com/)
-- Git was used to allow for tracking of any changes in the code and for the version control.
+- [Postgres](https://postgresapp.com/) - used as the DBMS to store user profile data and hosted on Heroku
 
-- [Github](https://github.com/)
-- GitHub is used to host the project files and publish the live website by using Git Pages.
+- [Balsamiq Wireframes](https://balsamiq.com/) - used to create wireframes
 
-- [TinyPNG](https://tinypng.com/)
-- Used to reduce resolution of images
+- [Figma](https://www.figma.com/) - used to create mockups and prototypes
 
-- [Bootstrap v4.5.0](https://getbootstrap.com/) - Used for the responsive layout as well as custom components such as image carousel, navigation bar, footer, cards, and collapse element.
+- [Creatt Studios](https://www.figma.com/@creatt) - component template to illustrate mockups
+
+- [Google Sheets](https://docs.google.com/spreadsheets/) - Tabulate user stories
+
+- [Zapier](https://www.zapier.com/) - Automate process of adding user stories from google sheets to Trello
+
+- [Trello](https://trello.com/) - Agile tool of choice to manage and plan web app.
+
+- [Lucid Chart](https://www.lucidchart.com/) - web app use to illustrated database schema.
+
+- [Canva](https://www.canva.com/) - webapp used to design logo and favicon.
+
+- [Django](https://www.djangoproject.com/) - Python web framework to create web application and provide security to users.
+
+- [Fontawesome](https://fontawesome.com/) - to insert icons in the website to make site more visually appealing and easy to navigate.
+
+- [Favicon.io](https://favicon.io/) - used to generate favicon to webpage
+
+- [Google Fonts](https://fonts.google.com/) - used to import 'Poppins' fonts in the style.css stylesheet.
+
+- [TinyPNG](https://tinypng.com/) - used to reduce resolution of images
+
+- [Bootstrap](https://getbootstrap.com/) - Used for the responsive layout as well as custom components such as image carousel, navigation bar, footer, cards, and collapse element.
+
 - [jquery](https://jquery.com/) - Used in some of the clickable elements such as collapsible 'hamburger' nav bar and collapse element.
+
 - [popper.js](https://popper.js.org/) - Used in some of the clickable elements such as collapsible 'hamburger' navbar and collapse element.
-- [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add social icons and complement the design.
-- [Google Fonts](https://fonts.google.com/) - Google Fonts was used to import 'Exo' and 'PT Sarif' fonts in the main.css stylesheet.
-- [Adobe Fonts](https://fonts.adobe.com/) - Adobe Fonts was used to import 'NeonStream' font which was the accent font in this project and cannot be found on Google Fonts website.
-- [Git](https://git-scm.com/) - Git was used to allow for tracking of any changes in the code and for the version control.
-- [GitPod](https://www.gitpod.io/) - GitPod, connected to GitHub, hosted the coding space and allowed the projected to be committed to the Github repository.
-- [Github](https://github.com/) - GitHub is used to host the project files and publish the live website by using Git Pages.
-- [Lightroom](https://www.adobe.com/ie/products/photoshop-lightroom.html?gclid=CjwKCAjwwYP2BRBGEiwAkoBpAqomS77OrQwQggC9QPnPACrkLBs-2AcrW9ZUvxbUJnFOgbRGKNeNEhoC95IQAvD_BwE&sdid=88X75SKS&mv=search&ef_id=CjwKCAjwwYP2BRBGEiwAkoBpAqomS77OrQwQggC9QPnPACrkLBs-2AcrW9ZUvxbUJnFOgbRGKNeNEhoC95IQAvD_BwE:G:s&s_kwcid=AL!3085!3!394412108599!e!!g!!lightroom) - Lightroom was used to edit and resize all images.
-- [Photoshop](https://www.adobe.com/ie/products/photoshop.html?gclid=CjwKCAjwwYP2BRBGEiwAkoBpAuYIg7JHUAFtnRQB28LDaU5gvFxhLX_56PYV2xbl6bTKvYSjK5yoLhoCkjQQAvD_BwE&sdid=88X75SKS&mv=search&ef_id=CjwKCAjwwYP2BRBGEiwAkoBpAuYIg7JHUAFtnRQB28LDaU5gvFxhLX_56PYV2xbl6bTKvYSjK5yoLhoCkjQQAvD_BwE:G:s&s_kwcid=AL!3085!3!340674288378!e!!g!!photoshop) - Photoshop was used to create the background graphic for the Landing page as well as the favicon.
-- [Adobe Xd](https://www.adobe.com/ie/products/xd.html) - Adobe Xd was used to create wireframes and mockups.
-  - [UnDraw](https://xd.undraw.co/) - UnDraw plugin was used to obtain royalty-free graphics used in the 'Home' and 'Active' pages.
-  - [ToolKit](https://manoharmanu.online/toolkit_plugin) - ToolKit plugin was used to obtain Royalty free images from UnSplash.
-  - [Icons 4 Design](http://emsoftware.com/xdplugins/icons-4-design/) - Icons 4 Design was used to add some icons across the page such as the alert sign on the 'Informed' page.
 
 ## Testing
 
@@ -379,11 +387,11 @@ Pass
 
 1. Error: The element a must not appear as a descendant of the button element
 
-From line 345, column 63; to line 345, column 118
+   From line 345, column 63; to line 345, column 118
 
-`="button"><a href="https://www.evisa.gov.zw/home" target="_blank">Apply`
+   `="button"><a href="https://www.evisa.gov.zw/home" target="_blank">Apply`
 
-<!-- markdownlint-disable-next-line MD029 -->
+   <!-- markdownlint-disable-next-line MD029 -->
 
 2. Error: The element a must not appear as a descendant of the button element.
 
