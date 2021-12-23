@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary",
     "blog",
+    "account",
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,7 @@ TEMPLATES = [
         },
     },
 ]
+AUTH_USER_MODEL = "account.Account"
 
 WSGI_APPLICATION = "owl_nook.wsgi.application"
 
@@ -88,6 +90,16 @@ WSGI_APPLICATION = "owl_nook.wsgi.application"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
+
+# if development == "True":
+#     DATABASES = {
+#         "default": {
+#             "ENGINE": "django.db.backends.sqlite3",
+#             "NAME": BASE_DIR / "db.sqlite3",
+#         }
+#     }
+# else:
+#     DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 
 # Password validation
