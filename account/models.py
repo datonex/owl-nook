@@ -35,6 +35,8 @@ class MyAccountManager(BaseUserManager):
 class Account(AbstractBaseUser):
     email = models.EmailField(verbose_name="email", max_length=60, unique=True)
     username = models.CharField(max_length=30, unique=True)
+    first_name = models.CharField(verbose_name="first name", max_length=30, blank=True)
+    last_name = models.CharField(verbose_name="last name", max_length=30, blank=True)
     slug = models.SlugField(max_length=50, unique=True)
     avatar_image = CloudinaryField("image", default="placeholder")
     biography = models.TextField(verbose_name="biography", max_length=200, blank=True)
