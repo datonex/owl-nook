@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from cloudinary.models import CloudinaryField
 
 
 class MyAccountManager(BaseUserManager):
@@ -35,6 +36,7 @@ class Account(AbstractBaseUser):
     email = models.EmailField(verbose_name="email", max_length=60, unique=True)
     username = models.CharField(max_length=30, unique=True)
     slug = models.SlugField(max_length=50, unique=True)
+    avatar_image = CloudinaryField("image", default="placeholder")
     biography = models.TextField(verbose_name="biography", max_length=200, blank=True)
     date_joined = models.DateTimeField(verbose_name="date joined", auto_now_add=True)
     last_login = models.DateTimeField(verbose_name="last login", auto_now_add=True)
