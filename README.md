@@ -1,4 +1,4 @@
-# <img src="static/img/logo/owl-only/owl-coral.png" height="50" /> Owl Nook
+# <img src="README/owl-coral.png" height="50" /> Owl Nook
 
 ## Overview
 
@@ -470,6 +470,8 @@ Each bit of content must have its own link and displayed as a list
 #### Video
 
 - video was obtained from [here](https://linkhere.com)
+
+### Inspiration
 
 ### Acknowledgements
 
