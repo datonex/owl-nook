@@ -7,9 +7,15 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Category(models.Model):
-    category_name = models.CharField(max_length=50, unique=True)
-    slug = models.SlugField(max_length=50, unique=True)
+    category_name = models.CharField(
+        max_length=50,
+        unique=True,
+        default="uncategorised",
+    )
     Description = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.category_name
 
 
 class Post(models.Model):
@@ -27,7 +33,11 @@ class Post(models.Model):
         Account, related_name="blog_bookmarks", blank=True
     )
     category = models.ForeignKey(
-        Category, related_name="blog_categories", blank=True, on_delete=models.PROTECT
+        Category,
+        blank=True,
+        default="uncategorised",
+        on_delete=models.SET_DEFAULT,
+        related_name="blog_categories",
     )
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
@@ -47,8 +57,7 @@ class Post(models.Model):
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
-    name = models.CharField(max_length=80)
-    email = models.EmailField()
+    name = models.ForeignKey(Account, on_delete=models.CASCADE, related_name="comments")
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=True)
@@ -67,3 +76,6 @@ class Bookmark(models.Model):
     list_name = models.CharField(max_length=50, unique=True)
     description = models.TextField(blank=True)
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="blog_posts")
+
+    def __str__(self):
+        return self.list_name
