@@ -471,10 +471,34 @@ Each bit of content must have its own link and displayed as a list
 
 - video was obtained from [here](https://linkhere.com)
 
+### Dependencies
+
+- [Startbootstrap](https://startbootstrap.com/template/blog-home) - bootstrap blog template
+
+- [Vole](https://vole.wtf/text-generator/) - random text generator
+
+- [Geeks for geeks](https://www.geeksforgeeks.org/how-to-create-text-editor-using-javascript-and-html-dom/) - Creating text editor using JS and HTML
+
+- [Web fore front](https://www.webforefront.com/django/modeldatatypesandvalidation.html) - Django model data types
+
+- [Google fonts](https://fonts.google.com/specimen/Poppins?query=poppins#standard-styles) Poppins font
+
+- [CodingWithMitch](https://www.youtube.com/watch?v=eCeRC7E8Z7Y) Creating a custom user model
+
+- [Django user model](https://simpleisbetterthancomplex.com/article/2021/07/08/what-you-should-know-about-the-django-user-model.html) - information about the django user model
+
 ### Inspiration
 
-### Acknowledgements
+- [Philosophy template](https://colorlib.com/wp/template/philosophy/) - wordpress website template by Colorlib
 
-I received inspiration for this project from following tourists sites
+- [Philosophy template source code](https://github.com/ColorlibHQ/philosophy/blob/master/templates/404.php)
+
+- [ERD examples](https://www.slideshare.net/ArmanHossain16/entity-relationship-diagram-for-blogging-platform)
+
+- [ERD symbols and meanings](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning#section_1)
+
+- [Colorlib templates](https://colorlib.com/wp/free-bootstrap-blog-templates/)
+
+### Acknowledgements
 
 - Thank you to my mentor for his support and guidance
