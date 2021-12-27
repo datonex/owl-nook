@@ -1,3 +1,68 @@
 from django.db import models
+from account.models import Account
+from cloudinary.models import CloudinaryField
 
-# Create your models here.
+
+STATUS = ((0, "Draft"), (1, "Published"))
+
+
+class Category(models.Model):
+    category_name = models.CharField(max_length=50, unique=True)
+    Description = models.TextField(blank=True)
+
+
+class Post(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    author = models.ForeignKey(
+        Account, on_delete=models.CASCADE, related_name="blog_posts"
+    )
+    content = models.TextField()
+    featured_image = CloudinaryField("image", default="placeholder")
+    excerpt = models.TextField(blank=True)
+    likes = models.ManyToManyField(Account, related_name="blog_likes", blank=True)
+    dislikes = models.ManyToManyField(Account, related_name="blog_dislikes", blank=True)
+    bookmark = models.ManyToManyField(
+        Account, related_name="blog_bookmarks", blank=True
+    )
+    category = models.ForeignKey(
+        Category, related_name="blog_categories", blank=True, on_delete=models.PROTECT
+    )
+    created_on = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(choices=STATUS, default=0)
+
+    class Meta:
+        ordering = ["status", "created_on"]
+
+    def __str__(self):
+        return self.title
+
+    def number_of_likes(self):
+        return self.likes.count()
+
+    def number_of_dislikes(self):
+        return self.dislikes.count()
+
+
+class Comment(models.Model):
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=True)
+
+    class Meta:
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        return f"Comment {self.body} by {self.name}"
+
+    def number_of_comments(self):
+        return self.post.count()
+
+
+class Bookmark(models.Model):
+    list_name = models.CharField(max_length=50, unique=True)
+    description = models.TextField(blank=True)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="blog_posts")
