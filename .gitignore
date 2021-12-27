@@ -12,3 +12,4 @@ db.sqlite3
 *.zip
 .DS_Store
 planning
+sample_code.py
