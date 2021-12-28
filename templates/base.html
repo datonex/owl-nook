@@ -29,7 +29,43 @@
   <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#!">
+          <img src="{% static 'img/logo/png/logo-coral.png' %}" alt="Owl Nook" class="owlnook-logo">
+        </a>
+        <!-- user not authenticated -->
+        {% comment %} <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item ms-3">
+              <a class="btn btn-primary" href="#" role="button">Login</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="btn btn-outline-primary" href="#" role="button">Register</a>
+            </li>
+          </ul>
+        </div> {% endcomment %}
+        <!-- user is authenticated -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search the nook" aria-label="Search">
+                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </form>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#!"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+              <li class="nav-item"><a class="btn btn-outline-primary" href="#" role="button">Write</a></li>
+              <li class="nav-item"><a class="nav-link" href="#!"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
     <!-- Main Content -->
     <main class="flex-shrink-0 main-bg">
       {% block content %}{% endblock content %}
