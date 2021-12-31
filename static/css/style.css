@@ -1,4 +1,64 @@
+/* Navigation */
+:root {
+  --hide-content: none;
+  --show-content: block;
+}
+
 .owlnook-logo {
   width: 100px;
   height: 45px;
+}
+
+.nav-item .fa,
+.nav-item .fas {
+  font-size: 26px;
+}
+
+.navbar-nav li {
+  margin-top: 10px;
+}
+
+.nav-item .btn {
+  border: 0;
+  background: transparent;
+}
+
+.nav-item .btn i {
+  padding-top: 1px;
+}
+
+.navbar-form-search .btn:focus {
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+}
+
+.search-input {
+  margin-top: 8px;
+}
+
+.hide {
+  display: var(--hide-content);
+}
+
+.nav-sm {
+  display: var(--hide-content);
+}
+
+.nav-lg {
+  display: var(--show-content);
+}
+
+d-flex ul {
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-sm {
+    display: var(--show-content);
+  }
+
+  .nav-lg {
+    display: var(--hide-content);
+  }
 }
