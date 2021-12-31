@@ -14,22 +14,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
     <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
   </head>
 
   <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#!">
           <img src="{% static 'img/logo/png/logo-coral.png' %}" alt="Owl Nook" class="owlnook-logo">
@@ -46,24 +50,67 @@
           </ul>
         </div> {% endcomment %}
         <!-- user is authenticated -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search the nook" aria-label="Search">
-                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                </form>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a></li>
-              <li class="nav-item"><a class="nav-link" href="#!"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
-              <li class="nav-item"><a class="btn btn-outline-primary" href="#" role="button">Write</a></li>
-              <li class="nav-item"><a class="nav-link" href="#!"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
+        <ul class="d-flex">
+          <li class="nav-item nav-sm">
+            <form class="navbar-form-search d-flex" role="search">
+              <div class="search-form-container search-input-container hide">
+                <div class="search-input-group d-flex">
+                  <a type="button" class="nav-link hide-search-input-container" role="button">
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                  <div class="form-group">
+                    <input type="text" class="search-input" placeholder="Search the Nook...">
+                  </div>
+                </div>
+              </div>
+              <a type="submit" class="nav-link search-btn" role="button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+            </form>
+          </li>
+          <li class="nav-item nav-sm">
+            <a class="nav-link" href="#!" id="write-blog-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </li>
+        </ul>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item nav-lg">
+              <form class="navbar-form-search d-flex" role="search">
+                <div class="search-form-container search-input-container hide">
+                  <div class="search-input-group d-flex">
+                    <a type="button" class="nav-link hide-search-input-container" role="button">
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </a>
+                    <div class="form-group">
+                      <input type="text" class="search-input" placeholder="Search the Nook...">
+                    </div>
+                  </div>
+                </div>
+                <a type="submit" class="nav-link search-btn" role="button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+              </form>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a></li>
+            <li class="nav-item">
+              <a type="button" class="nav-link" href="#" role="button" id="write-blog-btn"><i class="fas fa-pencil-alt" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item nav-lg">
+              <a class="nav-link" href="#!" id="user-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav" id="navbar-sm">
+            {% comment %} TODO: create new navigation section to match mobile mockup {% endcomment %}
+          </ul>
+
+        </div>
       </div>
     </nav>
     <!-- Main Content -->
@@ -72,8 +119,7 @@
     </main>
 
     <!-- Footer -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script rel="script" type="text/javascript" src="{% static 'js/script.js' %}"></script>
   </body>
 
 </html>
