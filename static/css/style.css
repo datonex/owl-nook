@@ -88,6 +88,10 @@ i,
   display: var(--show-content);
 }
 
+.dropdown-toggle::after {
+  display: var(--hide-content);
+}
+
 @media screen and (max-width: 576px) {
   .navbar-sm {
     display: var(--show-content);
