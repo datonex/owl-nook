@@ -89,7 +89,8 @@ Click here for mobile [pdf versions](README/wireframes/mobile.pdf) :point_left:
 
   All the forms wil be based on these templates using the appropriate for each. Ideally they will fill the entire screen and there should be no need to scroll vertically or horizontally.
 
-  <img src="README/wireframes/img/mobile/sign-up_sign-in.png" height="300" /> <img src="README/wireframes/img/mobile/contact-us.png" height="300" />
+  <img src="README/wireframes/img/mobile/sign-up_sign-in.png" height="300" />
+  <img src="README/wireframes/img/mobile/contact-us.png" height="300" />
 
 ##### :iphone: Tablet Wireframes
 
@@ -97,7 +98,12 @@ Click here for tablet [pdf versions](README/wireframes/tablet.pdf) :point_left:
 
 The tablet wireframes are very similar to the mobile wireframes with minor modifications the content and elements to fit the screen size.
 
-<img src="README/wireframes/img/tablet/homepage.png" height="350" /> <img src="README/wireframes/img/tablet/blog-post.png" height="350" /> <img src="README/wireframes/img/tablet/category.png" height="350" /> <img src="README/wireframes/img/tablet/about-us.png" height="350" /> <img src="README/wireframes/img/tablet/sign-up_sign-in.png" height="350" /> <img src="README/wireframes/img/tablet/contact-us.png" height="350" />
+<img src="README/wireframes/img/tablet/homepage.png" height="350" />
+<img src="README/wireframes/img/tablet/blog-post.png" height="350" />
+<img src="README/wireframes/img/tablet/category.png" height="350" />
+<img src="README/wireframes/img/tablet/about-us.png" height="350" />
+<img src="README/wireframes/img/tablet/sign-up_sign-in.png" height="350" />
+<img src="README/wireframes/img/tablet/contact-us.png" height="350" />
 
 ##### :desktop_computer: Desktop Wireframes
 
@@ -105,7 +111,12 @@ Click here for Desktop [pdf versions](README/wireframes/desktop.pdf) :point_left
 
 The desktop wireframes are very similar to the tablet wireframes with minor modifications the content and elements to fit the screen size. The footer will be constantly displayed as the user scrolls including the categories on the right side of the page.
 
-<img src="README/wireframes/img/desktop/homepage.png" height="300" /> <img src="README/wireframes/img/desktop/blog-post.png" height="300" /> <img src="README/wireframes/img/desktop/category.png" height="300" /> <img src="README/wireframes/img/desktop/about-us.png" height="300" /> <img src="README/wireframes/img/desktop/sign-up_sign-in.png" height="300" /> <img src="README/wireframes/img/desktop/contact-us.png" height="300" />
+<img src="README/wireframes/img/desktop/homepage.png" height="300" />
+<img src="README/wireframes/img/desktop/blog-post.png" height="300" />
+<img src="README/wireframes/img/desktop/category.png" height="300" />
+<img src="README/wireframes/img/desktop/about-us.png" height="300" />
+<img src="README/wireframes/img/desktop/sign-up_sign-in.png" height="300" />
+<img src="README/wireframes/img/desktop/contact-us.png" height="300" />
 
 #### Colour Scheme
 
@@ -473,6 +484,8 @@ Each bit of content must have its own link and displayed as a list
 
 ### Dependencies
 
+- [Code Institute](https://codeinstitute.net/) - Full Stack Frameworks module
+
 - [Startbootstrap](https://startbootstrap.com/template/blog-home) - bootstrap blog template
 
 - [Vole](https://vole.wtf/text-generator/) - random text generator
@@ -488,6 +501,10 @@ Each bit of content must have its own link and displayed as a list
 - [Django user model](https://simpleisbetterthancomplex.com/article/2021/07/08/what-you-should-know-about-the-django-user-model.html) - information about the django user model
 
 ### Inspiration
+
+- [Medium](https://medium.com/) - Medium blog
+
+- [Bored Pand](https://www.boredpanda.com/) - Bored Panda blog
 
 - [Philosophy template](https://colorlib.com/wp/template/philosophy/) - wordpress website template by Colorlib
 
