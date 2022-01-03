@@ -34,8 +34,8 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#!">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">
           <img src="{% static 'img/logo/png/logo-coral.png' %}" alt="Owl Nook" class="owlnook-logo">
         </a>
         <!-- user not authenticated -->
@@ -50,66 +50,79 @@
           </ul>
         </div> {% endcomment %}
         <!-- user is authenticated -->
-        <ul class="d-flex">
-          <li class="nav-item nav-sm">
-            <form class="navbar-form-search d-flex" role="search">
-              <div class="search-form-container search-input-container hide">
-                <div class="search-input-group d-flex">
-                  <a type="button" class="nav-link hide-search-input-container" role="button">
-                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                  </a>
-                  <div class="form-group">
-                    <input type="text" class="search-input" placeholder="Search the Nook...">
-                  </div>
-                </div>
-              </div>
+        <div class="navbar-sm">
+          <ul class="d-flex">
+            <li class="nav-item">
               <a type="submit" class="nav-link search-btn" role="button">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </a>
-            </form>
-          </li>
-          <li class="nav-item nav-sm">
-            <a class="nav-link" href="#!" id="write-blog-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
-          </li>
-          <li class="nav-item">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </li>
-        </ul>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item nav-lg">
-              <form class="navbar-form-search d-flex" role="search">
-                <div class="search-form-container search-input-container hide">
-                  <div class="search-input-group d-flex">
-                    <a type="button" class="nav-link hide-search-input-container" role="button">
-                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                    </a>
-                    <div class="form-group">
-                      <input type="text" class="search-input" placeholder="Search the Nook...">
-                    </div>
-                  </div>
-                </div>
-                <a type="submit" class="nav-link search-btn" role="button">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
-              </form>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a></li>
             <li class="nav-item">
-              <a type="button" class="nav-link" href="#" role="button" id="write-blog-btn"><i class="fas fa-pencil-alt" aria-hidden="true"></i>
+              <a class="nav-link user-btn" href="#!" role="button">
+                <i class="fa fa-user" aria-hidden="true"></i>
               </a>
             </li>
-            <li class="nav-item nav-lg">
-              <a class="nav-link" href="#!" id="user-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+            <li class="nav-item">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </li>
           </ul>
-          <ul class="navbar-nav" id="navbar-sm">
-            {% comment %} TODO: create new navigation section to match mobile mockup {% endcomment %}
-          </ul>
-
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Write new blog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="nav-link" href="#" role="button">
+                  Reading list
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" role="button">
+                  Contact us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" role="button">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!" role="button">
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-lg">
+          <div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a type="submit" class="nav-link" role="button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-bookmark" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="nav-link" href="#" role="button">
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link user-btn" href="#!" role="button">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
