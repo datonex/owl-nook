@@ -51,6 +51,7 @@
           </ul>
         </div> {% endcomment %}
         <!-- user is authenticated -->
+        {% if user.is_authenticated %}
         <div class="navbar-sm">
           <ul class="d-flex">
             <li class="nav-item">
@@ -131,6 +132,21 @@
           </div>
         </div>
       </div>
+      {% else %}
+      <div class="un-auth-user">
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item">
+            <a class="btn btn-primary" href="#" role="button" id="login-btn">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary" href="#" role="button" id="register-btn">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="#" role="button" id="get-started-btn">Get started</a>
+          </li>
+        </ul>
+      </div>
+      {% endif %}
     </nav>
     <!-- Main Content -->
     <main class="flex-shrink-0 main-bg">
