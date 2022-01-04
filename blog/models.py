@@ -46,7 +46,7 @@ class Post(models.Model):
         ordering = ["status", "created_on"]
 
     def __str__(self):
-        return self.title
+        return self.title + " | " + str(self.author)
 
     def number_of_likes(self):
         return self.likes.count()
