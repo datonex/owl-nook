@@ -1,8 +1,14 @@
-/* Navigation */
+/* Universal */
 :root {
-  --hide-content: none;
-  --show-content: block;
+  --hide: none;
+  --show: block;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation */
 
 .owlnook-logo {
   width: 100px;
@@ -32,23 +38,30 @@ i,
 .navbar-sm,
 .dropdown-toggle::after,
 #get-started-btn {
-  display: var(--hide-content);
+  display: var(--hide);
 }
 
 .un-auth-user li {
   margin: 0 10px;
 }
+/* Homepage */
+
+.fa-chevron-right::before {
+  padding-left: 8px;
+  padding-top: 4px;
+  font-size: 21px;
+}
 
 @media screen and (max-width: 576px) {
   .navbar-sm,
   #get-started-btn {
-    display: var(--show-content);
+    display: var(--show);
   }
 
   .navbar-lg,
   #register-btn,
   #login-btn {
-    display: var(--hide-content);
+    display: var(--hide);
   }
 
   .navbar-toggler-icon {
