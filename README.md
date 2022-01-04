@@ -319,6 +319,8 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 - [popper.js](https://popper.js.org/) - Used in some of the clickable elements such as collapsible 'hamburger' navbar and collapse element.
 
+- [Waypoint](http://imakewebthings.com/waypoints/) - Used ad infinite scrolling function to posts
+
 ## Testing
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
