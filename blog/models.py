@@ -26,7 +26,7 @@ class Post(models.Model):
     )
     content = models.TextField()
     featured_image = CloudinaryField("image", default="placeholder")
-    excerpt = models.TextField(blank=True)
+    excerpt = models.CharField(max_length=120, blank=False)
     likes = models.ManyToManyField(Account, related_name="blog_likes", blank=True)
     dislikes = models.ManyToManyField(Account, related_name="blog_dislikes", blank=True)
     bookmark = models.ManyToManyField(
