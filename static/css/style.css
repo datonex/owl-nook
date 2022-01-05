@@ -12,6 +12,10 @@ body {
   display: var(--hide);
 }
 
+.hide {
+  display: --hide;
+}
+
 /* Navigation */
 
 .owlnook-logo {
@@ -54,6 +58,13 @@ i,
   padding-left: 8px;
   padding-top: 4px;
   font-size: 21px;
+}
+
+.featured-post img {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 576px) {
