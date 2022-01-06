@@ -14,3 +14,19 @@ class PostAdmin(SummernoteModelAdmin):
 
 
 admin.site.register(Category)
+
+# Edit summernote toolbar
+# ('#summernote').summernote({
+#   toolbar: [
+#     // [groupName, [list of button]]
+#     ['style', ['bold', 'italic', 'underline', 'clear']],
+#     ['font', ['strikethrough', 'superscript', 'subscript']],
+#     ['fontsize', ['fontsize']],
+#     ['color', ['color']],
+#     ['para', ['ul', 'ol', 'paragraph']],
+#     ['height', ['height']],
+#     ['table', ['table']],
+#     ['insert', ['link', 'picture', 'video']],
+#     ['view', ['fullscreen', 'codeview', 'help']],
+#   ],
+# });
