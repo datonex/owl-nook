@@ -2,10 +2,11 @@
 :root {
   --hide: none;
   --show: block;
+  --grey: #a2abb5;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .spin-loader {
@@ -67,10 +68,20 @@ i,
   opacity: 0.4;
 }
 
+/* Post details */
+.title-hr {
+  border: 3px solid var(--grey);
+  width: 80px;
+}
+
 @media screen and (max-width: 576px) {
   .navbar-sm,
   #get-started-btn {
     display: var(--show);
+  }
+
+  .navbar-sm li a {
+    margin-top: 6px;
   }
 
   .navbar-lg,
@@ -88,9 +99,5 @@ i,
   .navbar-toggler-icon,
   i {
     font-size: 26px;
-  }
-
-  .navbar-sm li a {
-    margin-top: 6px;
   }
 }
