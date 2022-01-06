@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 
   <div class="container home-posts">
@@ -13,7 +14,7 @@
             <div class="card mb-4 bg-dark text-white featured-post">
               {% comment %} prettier-ignore {% endcomment %}
                 {% if "placeholder" in posts.0.featured_image.url %}
-                <img class="card-img" src="static/img/placeholder.jpg"/>
+                <img class="card-img" src="{% static '/img/placeholder.jpg' %}"/>
               {% else %}
                 <img class="card-img" src="{{ posts.0.featured_image.url }}"/>
               {% endif %}
@@ -25,7 +26,8 @@
                   |
                   {{ posts.0.created_on }}
                 </p>
-                <a class="btn btn-secondary d-flex align-items-center justify-content-between" href="#!">Read more
+                <a class="btn btn-secondary d-flex align-items-center justify-content-between" href="{% url 'post_detail' posts.0.slug %}">
+                  Read more
                   <i class="fa fa-chevron-right d-flex align-items-center justify-content-between" aria-hidden="true"></i>
                 </a>
               </div>
@@ -36,7 +38,7 @@
             <div class="card mb-4 bg-dark text-white featured-post">
               {% comment %} prettier-ignore {% endcomment %}
                 {% if "placeholder" in posts.1.featured_image.url %}
-                <img class="card-img" src="static/img/placeholder.jpg"/>
+                <img class="card-img" src="{% static '/img/placeholder.jpg' %}"/>
               {% else %}
                 <img class="card-img" src="{{ posts.1.featured_image.url }}"/>
               {% endif %}
@@ -48,7 +50,7 @@
                   |
                   {{ posts.1.created_on }}
                 </p>
-                <a class="btn btn-secondary d-flex align-items-center justify-content-between" href="#!">Read more
+                <a class="btn btn-secondary d-flex align-items-center justify-content-between" href="{% url 'post_detail' posts.1.slug %}">Read more
                   <i class="fa fa-chevron-right d-flex align-items-center justify-content-between" aria-hidden="true"></i>
                 </a>
               </div>
@@ -66,9 +68,9 @@
             <div class="card-group col-lg-6 infinite-item">
               <!-- Blog post-->
               <div class="card mb-4">
-                <a href="#!">
+                <a href="{% url 'post_detail' post.slug %}">
                   {% if "placeholder" in post.featured_image.url %}
-                    <img class="card-img-top" src="static/img/placeholder.jpg"/>
+                    <img class="card-img-top" src="{% static '/img/placeholder.jpg' %}"/>
                   {% else %}
                     <img class="card-img-top" src=" {{ post.featured_image.url }}"/>
                   {% endif %}
@@ -81,7 +83,7 @@
                   <p class="card-text">{{ post.excerpt }} ...</p>
                 </div>
                 <div class="card-footer d-flex justify-content-between align-items-center">
-                  <a class="btn btn-secondary d-flex align-items-center justify-content-between" href="#!">Read more
+                  <a class="btn btn-secondary d-flex align-items-center justify-content-between" href="{% url 'post_detail' post.slug %}">Read more
                     <i class="fa fa-chevron-right d-flex align-items-center justify-content-between" aria-hidden="true"></i>
                   </a>
                   <small class="text-muted">{{ post.category }}</small>
