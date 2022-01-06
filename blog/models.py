@@ -1,6 +1,7 @@
 from django.db import models
 from account.models import Account
 from cloudinary.models import CloudinaryField
+from tinymce import models as tinymce_models
 
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -24,7 +25,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         Account, on_delete=models.CASCADE, related_name="blog_posts"
     )
-    content = models.TextField()
+    content = tinymce_models.HTMLField()
     featured_image = CloudinaryField("image", default="placeholder")
     excerpt = models.CharField(max_length=120, blank=False)
     likes = models.ManyToManyField(Account, related_name="blog_likes", blank=True)
