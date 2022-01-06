@@ -134,6 +134,32 @@ USE_L10N = True
 
 USE_TZ = True
 
+SUMMERNOTE_CONFIG = {
+    "summernote": {
+        # Toolbar customization
+        # https://summernote.org/deep-dive/#custom-toolbar-popover
+        "fontNames": ["Poppins", "sans-serif"],
+        "fontNamesIgnoreCheck": ["Poppins", "sans-serif"],
+        "addDefaultFonts": ["false"],
+        "toolbar": [
+            ["style", ["style", "bold", "italic", "underline", "clear"]],
+            ["font", ["strikethrough", "superscript", "subscript"]],
+            ["fontname", ["fontname"]],
+            ["fontsize", ["fontsize"]],
+            ["para", ["ul", "ol", "paragraph"]],
+            ["table", ["table"]],
+            [
+                "insert",
+                [
+                    "link",
+                    "picture",
+                    "hr",
+                ],
+            ],
+            ["view", ["fullscreen", "codeview", "undo", "redo", "help"]],
+        ],
+    }
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
