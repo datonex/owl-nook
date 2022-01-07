@@ -45,10 +45,17 @@ class Post(models.Model):
         related_name="blog_categories",
     )
     created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
+    status = models.IntegerField(choices=STATUS, default=1)
 
     class Meta:
         ordering = ["status", "created_on"]
+
+    def __unicode__(self):
+        try:
+            public_id = self.featured_image.public_id
+        except AttributeError:
+            public_id = ""
+        return "Post <%s:%s>" % (self.title, public_id)
 
     def __str__(self):
         return self.title + " | " + str(self.author)
@@ -59,6 +66,7 @@ class Post(models.Model):
     def number_of_dislikes(self):
         return self.dislikes.count()
 
+    # https://realpython.com/django-redirects/
     def get_absolute_url(self):
         return reverse("post_detail", args=[str(self.slug)])
 

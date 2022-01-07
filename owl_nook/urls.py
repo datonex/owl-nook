@@ -15,9 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
+
+import blog.views as blog
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("tinymce/", include("tinymce.urls")),
     path("", include("blog.urls"), name="blog_urls"),
+    # URL for uploading an image
+    url(r"^add_post$", blog.upload, name="blog.views.add_post"),
 ]

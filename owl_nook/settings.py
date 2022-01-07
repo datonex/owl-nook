@@ -12,7 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 if os.path.isfile("env.py"):
     import env
@@ -51,8 +53,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary",
     "tinymce",
-    "blog",
     "owlnookuser",
+    "blog",
 ]
 
 MIDDLEWARE = [
@@ -78,6 +80,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "blog.context_processors.consts",
             ],
         },
     },

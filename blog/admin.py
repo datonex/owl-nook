@@ -15,12 +15,4 @@ class PostAdmin(admin.ModelAdmin):
     formfield_overrides = {models.TextField: {"widget": TinyMCE()}}
 
 
-# class PostAdmin(SummernoteModelAdmin):
-#     summernote_fields = "content"
-#     list_display = ("author", "title", "status", "created_on")
-#     search_fields = ["title", "content"]
-#     list_filter = ("status", "created_on")
-#     prepopulated_fields = {"slug": ("title",)}
-
-
 admin.site.register(Category)
