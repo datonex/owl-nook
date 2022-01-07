@@ -1,4 +1,6 @@
 from django.db import models
+from django.urls import reverse
+from django.shortcuts import redirect
 from owlnookuser.models import OwlNookUser
 from cloudinary.models import CloudinaryField
 from tinymce import models as tinymce_models
@@ -56,6 +58,9 @@ class Post(models.Model):
 
     def number_of_dislikes(self):
         return self.dislikes.count()
+
+    def get_absolute_url(self):
+        return reverse("post_detail", args=[str(self.slug)])
 
 
 class Comment(models.Model):

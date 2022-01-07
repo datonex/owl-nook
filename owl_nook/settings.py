@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     "cloudinary",
     "tinymce",
     "blog",
-    "account",
+    "owlnookuser",
 ]
 
 MIDDLEWARE = [
@@ -82,7 +82,7 @@ TEMPLATES = [
         },
     },
 ]
-AUTH_USER_MODEL = "account.Account"
+AUTH_USER_MODEL = "owlnookuser.OwlNookUser"
 
 WSGI_APPLICATION = "owl_nook.wsgi.application"
 

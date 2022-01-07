@@ -10,10 +10,7 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ["title", "content"]
     list_filter = ("status", "created_on")
     prepopulated_fields = {
-        "slug": (
-            "title",
-            "author",
-        ),
+        "slug": ("title",),
     }
     formfield_overrides = {models.TextField: {"widget": TinyMCE()}}
 

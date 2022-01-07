@@ -18,19 +18,34 @@ class PostDetail(View):
         comments = post.comments.order_by("created_on")
         liked = False
         disliked = False
-        if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
+        # if post.likes.filter(id=self.request.user.id).exists():
+        #     liked = True
 
-        if post.dislikes.filter(id=self.request.user.id).exists():
-            disliked = True
+        # if post.dislikes.filter(id=self.request.user.id).exists():
+        #     disliked = True
         return render(
             request,
             "post_detail.html",
             {
                 "post": post,
-                "comments": comments,
-                "commented": False,
-                "liked": liked,
-                "disliked": disliked,
+                # "comments": comments,
+                # "commented": False,
+                # "liked": liked,
+                # "disliked": disliked,
             },
         )
+
+
+class AddPost(generic.CreateView):
+    model = Post
+    template_name = "add_post.html"
+    fields = [
+        "author",
+        "title",
+        "slug",
+        "excerpt",
+        "featured_image",
+        "content",
+        "category",
+        "status",
+    ]
