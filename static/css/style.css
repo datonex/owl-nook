@@ -1,0 +1,73 @@
+/* Navigation */
+:root {
+  --hide-content: none;
+  --show-content: block;
+}
+
+.owlnook-logo {
+  width: 100px;
+  height: 45px;
+}
+
+i,
+.navbar-toggler-icon {
+  font-size: 30px;
+}
+
+.navbar-sm ul {
+  padding-right: 12px;
+}
+
+.navbar-sm ul {
+  margin-bottom: 6px;
+}
+
+.navbar-lg .nav-link,
+.navbar-sm .nav-link {
+  margin-top: 8px;
+}
+
+.navbar-toggler,
+.navbar-sm a,
+.navbar-lg .nav-link {
+  padding: 4px 10px;
+  border: 0;
+}
+
+.navbar-sm,
+.dropdown-toggle::after,
+#get-started-btn {
+  display: var(--hide-content);
+}
+
+.un-auth-user li {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-sm,
+  #get-started-btn {
+    display: var(--show-content);
+  }
+
+  .navbar-lg,
+  #register-btn,
+  #login-btn {
+    display: var(--hide-content);
+  }
+
+  .navbar-toggler-icon {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .navbar-toggler-icon,
+  i {
+    font-size: 26px;
+  }
+
+  .navbar-sm li a {
+    margin-top: 6px;
+  }
+}
