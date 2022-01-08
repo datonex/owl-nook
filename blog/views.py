@@ -44,22 +44,17 @@ class AddPost(generic.CreateView):
     form_class = PostForm
     template_name = "add_post.html"
 
+    def upload(request):
+        context = dict(
+            backend_form=PostForm(),
+        )
 
-def upload(request):
+        if request.method == "POST":
+            # cloudinary backend upload
+            form = PostForm(request.POST, request.FILES)
+            context["posted"] = form.instance
+            if form.is_valid():
+                # Uploads image and creates a model instance for it
+                form.save()
 
-    context = dict(
-        # Form demonstrating backend upload
-        backend_form=PostForm(),
-    )
-    # When using direct upload - the following call is necessary to update the
-    # form's callback url
-
-    if request.method == "POST":
-        # Only backend upload should be posting here
-        form = PostForm(request.POST, request.FILES)
-        context["posted"] = form.instance
-        if form.is_valid():
-            # Uploads image and creates a model instance for it
-            form.save()
-
-    return render(request, "add_post.html", context)
+        return render(request, "post_detail.html", context)

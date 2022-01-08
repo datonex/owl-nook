@@ -1,12 +1,11 @@
 {% extends "base.html"%}
 {% load cloudinary %}
-{% cloudinary_includes %}
 {% block content %}
   <div class="container">
     <h1>Add post</h1>
 
     <div class="form-group" id='backend_upload'>
-      <form method="post" action="{% url 'blog.views.add_post' %}" enctype="multipart/form-data">
+      <form method="post" action="{% url 'upload_post' %}" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
         {{ backend_form }}

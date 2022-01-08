@@ -48,7 +48,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=1)
 
     class Meta:
-        ordering = ["status", "created_on"]
+        ordering = ["status", "-created_on"]
 
     def __unicode__(self):
         try:
