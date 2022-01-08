@@ -79,6 +79,10 @@
                 </div>
               </div>
             </header>
+            <div class="mb-4 "><a class="btn btn-secondary d-flex align-items-center justify-content-between" href="{% url 'edit_post' post.slug %}">
+              Edit
+              <i class="fa fa-chevron-right d-flex align-items-center justify-content-between" aria-hidden="true"></i>
+            </a></div>
             <!-- Preview image figure-->
             <figure class="mb-4">
               {% if "placeholder" in post.featured_image.url %}

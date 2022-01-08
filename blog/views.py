@@ -3,7 +3,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 
 from .models import Post
-from .forms import PostForm
+from .forms import EditForm, PostForm
 
 
 class PostList(generic.ListView):
@@ -58,3 +58,9 @@ class AddPost(generic.CreateView):
                 form.save()
 
         return render(request, "post_detail.html", context)
+
+
+class EditPost(generic.UpdateView):
+    model = Post
+    form_class = EditForm
+    template_name = "edit_post.html"
