@@ -46,7 +46,7 @@ class AddPost(generic.CreateView):
 
     def upload(request):
         context = dict(
-            backend_form=PostForm(),
+            image_form=PostForm(),
         )
 
         if request.method == "POST":
