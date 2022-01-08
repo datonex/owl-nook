@@ -14,6 +14,7 @@ $(document).ready(function () {
   });
 
   // update slug
+  // https://www.w3schools.com/jsref/jsref_replace.asp
   $('#id_title').on('keyup', function () {
     let title = document.getElementById('id_title').value;
     document.getElementById('id_slug').value = String(title.replaceAll(' ', '-').toLowerCase());
