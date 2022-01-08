@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+{%block title %}Delete Post{% endblock %}
+{% load cloudinary %}
+{% block content %}
+  <div class="container">
+    <h1 class="mb-4">Delete:
+      {{post.title}}</h1>
+
+    <div class="form-group" id='backend_upload'>
+      <form method="post" action="{% url 'remove_post' post.slug %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p class="fst-italic mb-4">Delete
+          {{post.title}}?</p>
+        <div>
+          <button type="submit" value="Post" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="{% url 'remove_post' post.slug %}#delete-success">Delete</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
