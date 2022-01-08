@@ -1,8 +1,30 @@
-/* Navigation */
+/* Universal */
 :root {
-  --hide-content: none;
-  --show-content: block;
+  --hide: none;
+  --show: block;
+  --grey: #a2abb5;
+  --grey20: rgba(162, 171, 181, 0.2)
+  --grey40: rgba(162, 171, 181, 0.4)
+  --grey60: rgba(162, 171, 181, 0.6)
+  --grey80: rgba(162, 171, 181, 0.8)
+  --coral: #f87575;
+  --navy: #0e103d;
+  --white: #fff;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.spin-loader {
+  display: var(--hide);
+}
+
+.hide {
+  display: --hide;
+}
+
+/* Navigation */
 
 .owlnook-logo {
   width: 100px;
@@ -37,23 +59,47 @@ i,
 .navbar-sm,
 .dropdown-toggle::after,
 #get-started-btn {
-  display: var(--hide-content);
+  display: var(--hide);
 }
 
 .un-auth-user li {
   margin: 0 10px;
 }
+/* Homepage */
+
+.fa-chevron-right::before {
+  padding-left: 8px;
+  padding-top: 4px;
+  font-size: 21px;
+}
+
+.featured-post img {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+/* Post details */
+.title-hr {
+  border: 3px solid var(--grey);
+  width: 80px;
+}
 
 @media screen and (max-width: 576px) {
   .navbar-sm,
   #get-started-btn {
-    display: var(--show-content);
+    display: var(--show);
+  }
+
+  .navbar-sm li a {
+    margin-top: 6px;
   }
 
   .navbar-lg,
   #register-btn,
   #login-btn {
-    display: var(--hide-content);
+    display: var(--hide);
   }
 
   .navbar-toggler-icon {
@@ -65,9 +111,5 @@ i,
   .navbar-toggler-icon,
   i {
     font-size: 26px;
-  }
-
-  .navbar-sm li a {
-    margin-top: 6px;
   }
 }
