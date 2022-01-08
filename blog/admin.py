@@ -1,12 +1,18 @@
 from django.contrib import admin
+from django.db import models
 from .models import Post, Category
-from django_summernote.admin import SummernoteModelAdmin
+from tinymce.widgets import TinyMCE
 
 
 @admin.register(Post)
-class PostAdmin(SummernoteModelAdmin):
-
-    summernote_fields = "content"
+class PostAdmin(admin.ModelAdmin):
+    list_display = ("author", "title", "status", "created_on")
+    search_fields = ["title", "content"]
+    list_filter = ("status", "created_on")
+    prepopulated_fields = {
+        "slug": ("title",),
+    }
+    formfield_overrides = {models.TextField: {"widget": TinyMCE()}}
 
 
 admin.site.register(Category)

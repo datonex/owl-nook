@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{%block title %}Add post{% endblock %}
+{% load cloudinary %}
+{% block content %}
+  <div class="container">
+    <h1>Add post</h1>
+
+    <div class="form-group" id='backend_upload'>
+      <form method="post" action="{% url 'upload_post' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {{ image_form }}
+        <div>
+          <button type="submit" value="Post" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="{% url 'upload_post' %}#upload-success">Post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
