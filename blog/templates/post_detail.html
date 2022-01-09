@@ -3,9 +3,6 @@
 {% load static %}
 {% load cloudinary %}
 {% block content %}
-  <!-- Authenticated user -->
-  
-  {% if user.is_authenticated %}
   {% with posts|last as last%}
     {% if last %}
       <div class="modal" tabindex="-1" id="upload-success">
@@ -187,5 +184,4 @@
 
       </div>
     </div>
-  {% endif %}
 {% endblock %}
