@@ -10,7 +10,7 @@
           <div class="container justify-content-center">
             <div class="col-lg-8 ms-auto me-auto">
               {% csrf_token %}
-              {% for field in registration_form %}
+              {% for field in form %}
                 <div class="row ">
                   <div class="col-11 mt-3">
                     {{field.label_tag}}
