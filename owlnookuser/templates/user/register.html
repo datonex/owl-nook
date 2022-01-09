@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+{%block title %}Register{% endblock %}
+{% block content %}
+  <div class="container">
+    <div class="row mt-4 flex-column align-items-center justify-content-center">
+      <h1 class="mb-3 text-capitalize text-center">Register</h1>
+      <hr class="title-hr text-center ms-auto me-auto mb-4">
+      <div class="form-group" id="register-form">
+        <form method="post" action="{% url 'register' %}" class="d-flex flex-column align-items-center justify-content-center">
+          <div class="container justify-content-center">
+            <div class="col-lg-8 ms-auto me-auto">
+              {% csrf_token %}
+              {% for field in registration_form %}
+                <div class="row ">
+                  <div class="col-11 mt-3">
+                    {{field.label_tag}}
+                    {{ field }}
+                    {% for error in field.errors %}
+                      <div class="error">{{ error }}</div>
+                    {% endfor %}
+                  </div>
+                  {% if field.help_text %}
+                    <span class="col-1 align-self-end help-text" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="{{ field.help_text }}">
+                      <a role="button" disable="disable">
+                        <i class="far fa-question-circle"></i>
+                      </a>
+                    </span>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="mt-4">
+            <button type="submit" value="Register" class="btn btn-primary">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
