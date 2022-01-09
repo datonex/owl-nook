@@ -37,7 +37,6 @@ class OwlNookUser(AbstractBaseUser):
     username = models.CharField(max_length=30, unique=True)
     first_name = models.CharField(verbose_name="first name", max_length=30, blank=True)
     last_name = models.CharField(verbose_name="last name", max_length=30, blank=True)
-    slug = models.SlugField(max_length=50, unique=True)
     avatar_image = CloudinaryField("image", default="avatar")
     biography = models.TextField(verbose_name="biography", max_length=200, blank=True)
     date_joined = models.DateTimeField(verbose_name="date joined", auto_now_add=True)
@@ -48,9 +47,7 @@ class OwlNookUser(AbstractBaseUser):
     is_superuser = models.BooleanField(default=False)
 
     USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = [
-        "username",
-    ]
+    REQUIRED_FIELDS = ["username"]
 
     objects = MyAccountManager()
 
@@ -58,14 +55,7 @@ class OwlNookUser(AbstractBaseUser):
         return self.username
 
     def has_perm(self, perm, obj=None):
-        "Does the user have a specific permission?"
         return self.is_admin
 
     def has_module_perms(self, app_label):
-        "Does the user have permissions to view the app `app_label`?"
         return True
-
-    @property
-    def is_staff(self):
-        "Is the user a member of the staff?"
-        return self.is_admin
