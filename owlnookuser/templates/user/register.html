@@ -5,7 +5,7 @@
     <div class="row mt-4 flex-column align-items-center justify-content-center">
       <h1 class="mb-3 text-capitalize text-center">Register</h1>
       <hr class="title-hr text-center ms-auto me-auto mb-4">
-      <div class="form-group" id="register-form">
+      <div class="form-group justify-content-center" id="register-form">
         <form method="post" action="{% url 'register' %}" class="d-flex flex-column align-items-center justify-content-center">
           <div class="container justify-content-center">
             <div class="col-lg-5 ms-auto me-auto">
@@ -34,6 +34,9 @@
             <button type="submit" value="Register" class="btn btn-primary">Register</button>
           </div>
         </form>
+        <div class="mt-4 text-center">Already a member?
+          <a href="{% url 'login'%}" class="link-primary">Login</a>
+        </div>
       </div>
     </div>
   </div>
