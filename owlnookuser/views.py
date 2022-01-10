@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import generic
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 
 from .forms import RegistrationForm
 
@@ -26,3 +26,8 @@ class UserRegisterView(generic.CreateView):
             form = self.form_class
 
         return render(request, "user/register.html", context)
+
+
+def logout_view(request):
+    logout(request)
+    return redirect("home")
