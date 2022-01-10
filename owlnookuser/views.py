@@ -8,12 +8,11 @@ from .forms import RegistrationForm
 class UserRegisterView(generic.CreateView):
     form_class = RegistrationForm
     template_name = "user/register.html"
-    context = {"form": form_class}
 
     def post(self, request, *args, **kwargs):
         context = dict(registration_form=self.form_class)
         if request.method == "POST":
-            form = RegistrationForm(request.POST)
+            form = self.form_class(request.POST)
             if form.is_valid():
                 form.save()
                 email = form.cleaned_data.get("email")
@@ -24,6 +23,6 @@ class UserRegisterView(generic.CreateView):
             else:
                 context["form"] = form
         else:
-            form = RegistrationForm()
-            context["form"] = form
+            form = self.form_class
+
         return render(request, "user/register.html", context)

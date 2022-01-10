@@ -8,11 +8,11 @@
       <div class="form-group" id="register-form">
         <form method="post" action="{% url 'register' %}" class="d-flex flex-column align-items-center justify-content-center">
           <div class="container justify-content-center">
-            <div class="col-lg-8 ms-auto me-auto">
+            <div class="col-lg-5 ms-auto me-auto">
               {% csrf_token %}
               {% for field in form %}
                 <div class="row ">
-                  <div class="col-11 mt-3">
+                  <div class="col-10 mt-3">
                     {{field.label_tag}}
                     {{ field }}
                     {% for error in field.errors %}
