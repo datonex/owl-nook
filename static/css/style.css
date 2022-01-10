@@ -114,4 +114,7 @@ i,
   i {
     font-size: 26px;
   }
+  .navbar-sm ul {
+    padding-left: 0;
+  }
 }
