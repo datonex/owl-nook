@@ -1,9 +1,10 @@
 from django import forms
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.urls import reverse_lazy
 
 from .models import Post
-from .forms import PostForm
+from .forms import EditForm, PostForm
 
 
 class PostList(generic.ListView):
@@ -18,6 +19,7 @@ class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
+        posted = queryset.latest("created_on")
         comments = post.comments.order_by("created_on")
         liked = False
         disliked = False
@@ -26,17 +28,16 @@ class PostDetail(View):
 
         # if post.dislikes.filter(id=self.request.user.id).exists():
         #     disliked = True
-        return render(
-            request,
-            "post_detail.html",
-            {
-                "post": post,
-                # "comments": comments,
-                # "commented": False,
-                # "liked": liked,
-                # "disliked": disliked,
-            },
-        )
+
+        context = {
+            "post": post,
+            "posted": posted,
+            # "comments": comments,
+            # "commented": False,
+            # "liked": liked,
+            # "disliked": disliked,
+        }
+        return render(request, "post_detail.html", context)
 
 
 class AddPost(generic.CreateView):
@@ -46,7 +47,7 @@ class AddPost(generic.CreateView):
 
     def upload(request):
         context = dict(
-            backend_form=PostForm(),
+            image_form=PostForm(),
         )
 
         if request.method == "POST":
@@ -58,3 +59,15 @@ class AddPost(generic.CreateView):
                 form.save()
 
         return render(request, "post_detail.html", context)
+
+
+class EditPost(generic.UpdateView):
+    model = Post
+    form_class = EditForm
+    template_name = "edit_post.html"
+
+
+class DeletePost(generic.DeleteView):
+    model = Post
+    template_name = "delete_post.html"
+    success_url = reverse_lazy("home")

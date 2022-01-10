@@ -19,4 +19,13 @@ $(document).ready(function () {
     let title = document.getElementById('id_title').value;
     document.getElementById('id_slug').value = String(title.replaceAll(' ', '-').toLowerCase());
   });
+
+  // var popover = new bootstrap.Popover(document.querySelector('popover'), {
+  //   trigger: 'hover focus',
+  // });
+
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
 });

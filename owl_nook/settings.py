@@ -89,6 +89,9 @@ AUTH_USER_MODEL = "owlnookuser.OwlNookUser"
 
 WSGI_APPLICATION = "owl_nook.wsgi.application"
 
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
+
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases

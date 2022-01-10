@@ -86,6 +86,8 @@ i,
   width: 80px;
 }
 
+/* Registration form */
+
 @media screen and (max-width: 576px) {
   .navbar-sm,
   #get-started-btn {
@@ -111,5 +113,8 @@ i,
   .navbar-toggler-icon,
   i {
     font-size: 26px;
+  }
+  .navbar-sm ul {
+    padding-left: 0;
   }
 }
